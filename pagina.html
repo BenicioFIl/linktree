@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Linktree</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+      color: #f3f3f3; 
+    }
+
+    .container {
+      background-color: rgba(24, 24, 32, 0.85);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .profile img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #00bfff;
+      margin-bottom: 15px;
+    }
+
+    .profile h1 {
+      margin: 0;
+      font-size: 26px;
+      color: #00bfff;
+      text-shadow: 0 2px 8px #0a1a2f;
+    }
+
+    .links {
+      margin-top: 25px;
+    }
+
+    .links a {
+      display: block;
+      background: #23234b;
+      color: #f3f3f3;
+      text-align: center;
+      padding: 14px 20px;
+      border-radius: 10px;
+      margin: 10px 0;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background 0.3s, color 0.3s;
+      border: 1px solid #00bfff;
+    }
+
+    .links a:hover {
+      background: #00bfff;
+      color: #23234b;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #b3e6ff;
+      text-shadow: 0 1px 4px #0a1a2f;
+    }
+    #video-fondo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <img src="WhatsApp Image 2025-06-23 at 4.50.29 PM.jpeg" alt="Foto de perfil">
+      <h1>Benicio Filippo</h1>
+    </div>
+
+    <div class="links">
+      <a href="https://beniciofil.github.io/TrabajoDyDweb" target="_blank">Identikit</a>
+      <a href="https://beniciofil.github.io/Miblog/" target="_blank">Blog</a>
+      <a href="" target="_blank">.</a>
+    </div>
+
+    <footer>
+      &copy; Mi linktree.
+    </footer>
+  </div>
+  <video autoplay muted loop id="video-fondo">
+    <source src="13495-248644905_small.mp4" type="video/mp4">
+  </video>
+</body>
+</html>
